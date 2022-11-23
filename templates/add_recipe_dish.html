@@ -1,0 +1,312 @@
+<html>
+ <head>
+    <title>CREATE RECIPE DISH</title>
+ <script type="text/javascript">
+function add_ingredient_2() {document.getElementById('ingredient2').style.display="block";}
+function add_ingredient_3() {document.getElementById('ingredient3').style.display="block";}
+function add_ingredient_4() {document.getElementById('ingredient4').style.display="block";}
+function add_ingredient_5() {document.getElementById('ingredient5').style.display="block";}
+function add_ingredient_6() {document.getElementById('ingredient6').style.display="block";}
+function add_ingredient_7() {document.getElementById('ingredient7').style.display="block";}
+function add_ingredient_8() {document.getElementById('ingredient8').style.display="block";}
+function add_ingredient_9() {document.getElementById('ingredient9').style.display="block";}
+function add_ingredient_10() {document.getElementById('ingredient10').style.display="block";}
+function add_ingredient_11() {document.getElementById('ingredient11').style.display="block";}
+function add_ingredient_12() {document.getElementById('ingredient12').style.display="block";}
+function add_ingredient_13() {document.getElementById('ingredient13').style.display="block";}
+function add_ingredient_14() {document.getElementById('ingredient14').style.display="block";}
+function add_ingredient_15() {document.getElementById('ingredient15').style.display="block";}
+
+function add_spices_2() {document.getElementById('spice2').style.display="block";}
+function add_spices_3() {document.getElementById('spice3').style.display="block";}
+function add_spices_4() {document.getElementById('spice4').style.display="block";}
+function add_spices_5() {document.getElementById('spice5').style.display="block";}
+function add_spices_6() {document.getElementById('spice6').style.display="block";}
+function add_spices_7() {document.getElementById('spice7').style.display="block";}
+function add_spices_8() {document.getElementById('spice8').style.display="block";}
+function add_spices_9() {document.getElementById('spice9').style.display="block";}
+function add_spices_10() {document.getElementById('spice10').style.display="block";}
+</script>
+  </head>
+  <body>
+ <form action="add_dish" method="POST">
+     {% csrf_token %}
+  <div>
+    <label for="dish_name">Dish Name</label>
+    <input name="dish_name" id="dish_name" placeholder="Enter the name of the dish" />
+  </div>
+     <div>
+    <label for="dish_type">Dish Type</label>
+    <select id="dish_type" name="dish_type">
+        <option value="Appetizer">Appetizer</option>
+        <option value="Salad">Salad</option>
+        <option value="Soup">Soup</option>
+        <option value="Garnish">Garnish</option>
+        <option value="Main Dish">Main Dish</option>
+        <option value="Meat Dish">Meat Dish</option>
+        <option value="Poultry Dish">Poultry Dish</option>
+        <option value="Seafood Dish">Seafood Dish</option>
+        <option value="Snack">Snack</option>
+        <option value="Sauce">Sauce</option>
+        <option value="Dessert">Dessert</option>
+        <option value="Beverage">Beverage</option>
+    </select>
+    </div>
+  <label for="method">Method Preparation</label>
+    <select id="method" name="method">
+        <option value="Combine">Combine</option>
+        <option value="Slicing">Slicing</option>
+        <option value="Fry">Fry</option>
+        <option value="Brew">Brew</option>
+        <option value="Steamed">Steamed</option>
+        <option value="BBQ-Grill">BBQ-Grill</option>
+        <option value="Braised">Braised</option>
+        <option value="Baked">Baked</option>
+    </select>
+<div>
+    <label for="ingredient_1"><b>Main Ingredient</b></label>
+    <input name="ingredient_1" id="ingredient_1" placeholder="Enter the first ingredient" />
+    <label for="quantity_1"><b>Quantity product</b></label>
+    <input type="number" name="quantity_1" id="quantity_1" placeholder="How many?" />
+    <input type="button" onclick="add_ingredient_2()" value="Add ingredient"/><br/>
+ </div>
+     <div>
+    <span id="ingredient2" style="display:none">
+    <label for="ingredient_2">Next Ingredient</label>
+    <input type="text" name="ingredient_2" id="ingredient_2" placeholder="Enter the next ingredient" />
+    <label for="quantity_2">Quantity product</label>
+    <input type="number" name="quantity_2" id="quantity_2" placeholder="How many?" />
+    <input type="button" onclick="add_ingredient_3()" value="Add ingredient"/><br/>
+    </span>
+ </div>
+         <div>
+    <span id="ingredient3" style="display:none">
+    <label for="ingredient_3">Next Ingredient</label>
+    <input type="text" name="ingredient_3" id="ingredient_3" placeholder="Enter the next ingredient" />
+    <label for="quantity_3">Quantity product</label>
+    <input type="number" name="quantity_3" id="quantity_3" placeholder="How many?" />
+    <input type="button" onclick="add_ingredient_4()" value="Add ingredient"/><br/>
+    </span>
+ </div>
+         <div>
+    <span id="ingredient4" style="display:none">
+    <label for="ingredient_4">Next Ingredient</label>
+    <input type="text" name="ingredient_4" id="ingredient_4" placeholder="Enter the next ingredient" />
+    <label for="quantity_4">Quantity product</label>
+    <input type="number" name="quantity_4" id="quantity_4" placeholder="How many?" />
+    <input type="button" onclick="add_ingredient_5()" value="Add ingredient"/><br/>
+    </span>
+ </div>
+         <div>
+    <span id="ingredient5" style="display:none">
+    <label for="ingredient_5">Next Ingredient</label>
+    <input type="text" name="ingredient_5" id="ingredient_5" placeholder="Enter the next ingredient" />
+    <label for="quantity_5">Quantity product</label>
+    <input type="number" name="quantity_5" id="quantity_5" placeholder="How many?" />
+    <input type="button" onclick="add_ingredient_6()" value="Add ingredient"/><br/>
+    </span>
+ </div>
+         <div>
+    <span id="ingredient6" style="display:none">
+    <label for="ingredient_6">Next Ingredient</label>
+    <input type="text" name="ingredient_6" id="ingredient_6" placeholder="Enter the next ingredient" />
+    <label for="quantity_6">Quantity product</label>
+    <input type="number" name="quantity_6" id="quantity_6" placeholder="How many?" />
+    <input type="button" onclick="add_ingredient_7()" value="Add ingredient"/><br/>
+    </span>
+ </div>
+         <div>
+    <span id="ingredient7" style="display:none">
+    <label for="ingredient_7">Next Ingredient</label>
+    <input type="text" name="ingredient_7" id="ingredient_7" placeholder="Enter the next ingredient" />
+    <label for="quantity_7">Quantity product</label>
+    <input type="number" name="quantity_7" id="quantity_7" placeholder="How many?" />
+    <input type="button" onclick="add_ingredient_8()" value="Add ingredient"/><br/>
+    </span>
+ </div>
+         <div>
+    <span id="ingredient8" style="display:none">
+    <label for="ingredient_8">Next Ingredient</label>
+    <input type="text" name="ingredient_8" id="ingredient_8" placeholder="Enter the next ingredient" />
+    <label for="quantity_8">Quantity product</label>
+    <input type="number" name="quantity_8" id="quantity_8" placeholder="How many?" />
+    <input type="button" onclick="add_ingredient_9()" value="Add ingredient"/><br/>
+    </span>
+ </div>
+         <div>
+    <span id="ingredient9" style="display:none">
+    <label for="ingredient_9">Next Ingredient</label>
+    <input type="text" name="ingredient_9" id="ingredient_9" placeholder="Enter the next ingredient" />
+    <label for="quantity_9">Quantity product</label>
+    <input type="number" name="quantity_9" id="quantity_9" placeholder="How many?" />
+    <input type="button" onclick="add_ingredient_10()" value="Add ingredient"/><br/>
+    </span>
+ </div>
+         <div>
+    <span id="ingredient10" style="display:none">
+    <label for="ingredient_10">Next Ingredient</label>
+    <input type="text" name="ingredient_10" id="ingredient_10" placeholder="Enter the next ingredient" />
+    <label for="quantity_10">Quantity product</label>
+    <input type="number" name="quantity_10" id="quantity_10" placeholder="How many?" />
+    <input type="button" onclick="add_ingredient_11()" value="Add ingredient"/><br/>
+    </span>
+ </div>
+         <div>
+    <span id="ingredient11" style="display:none">
+    <label for="ingredient_11">Next Ingredient</label>
+    <input type="text" name="ingredient_11" id="ingredient_11" placeholder="Enter the next ingredient" />
+    <label for="quantity_11">Quantity product</label>
+    <input type="number" name="quantity_11" id="quantity_11" placeholder="How many?" />
+    <input type="button" onclick="add_ingredient_12()" value="Add ingredient"/><br/>
+    </span>
+ </div>
+         <div>
+    <span id="ingredient12" style="display:none">
+    <label for="ingredient_12">Next Ingredient</label>
+    <input type="text" name="ingredient_12" id="ingredient_12" placeholder="Enter the next ingredient" />
+    <label for="quantity_12">Quantity product</label>
+    <input type="number" name="quantity_12" id="quantity_12" placeholder="How many?" />
+    <input type="button" onclick="add_ingredient_13()" value="Add ingredient"/><br/>
+    </span>
+ </div>
+         <div>
+    <span id="ingredient13" style="display:none">
+    <label for="ingredient_13">Next Ingredient</label>
+    <input type="text" name="ingredient_13" id="ingredient_13" placeholder="Enter the next ingredient" />
+    <label for="quantity_13">Quantity product</label>
+    <input type="number" name="quantity_13" id="quantity_13" placeholder="How many?" />
+    <input type="button" onclick="add_ingredient_14()" value="Add ingredient"/><br/>
+    </span>
+ </div>
+         <div>
+    <span id="ingredient14" style="display:none">
+    <label for="ingredient_14">Next Ingredient</label>
+    <input type="text" name="ingredient_14" id="ingredient_14" placeholder="Enter the next ingredient" />
+    <label for="quantity_14">Quantity product</label>
+    <input type="number" name="quantity_14" id="quantity_14" placeholder="How many?" />
+    <input type="button" onclick="add_ingredient_15()" value="Add ingredient"/><br/>
+    </span>
+ </div>
+         <div>
+    <span id="ingredient15" style="display:none">
+    <label for="ingredient_15">Last Ingredient</label>
+    <input type="text" name="ingredient_15" id="ingredient_15" placeholder="Enter the next ingredient" />
+    <label for="quantity_15">Quantity product</label>
+    <input type="number" name="quantity_15" id="quantity_15" placeholder="How many?" />
+    </span>
+ </div>
+  <div>
+    <label for="spice_1"><b>First spice</b></label>
+    <input type="text" name="spice_1" id="spice_1" placeholder="Enter the spice name" />
+    <label for="quantity_spice_1"><b>Quantity spices</b></label>
+    <input type="number" name="quantity_spice_1" id="quantity_spice_1" placeholder="How many?" />
+    <input type="button" onclick="add_spices_2()" value="Add spice"/><br/>
+ </div>
+      <div>
+    <span id="spice2" style="display:none">
+    <label for="spice_2">Next spice</label>
+    <input type="text" name="spice_2" id="spice_2" placeholder="Enter the spice name" />
+    <label for="quantity_spice_2">Quantity spices</label>
+    <input type="number" name="quantity_spice_2" id="quantity_spice_2" placeholder="How many?" />
+    <input type="button" onclick="add_spices_3()" value="Add spice"/><br/>
+    </span>
+ </div>
+      <div>
+    <span id="spice3" style="display:none">
+    <label for="spice_3">Next spice</label>
+    <input type="text" name="spice_3" id="spice_3" placeholder="Enter the spice name" />
+    <label for="quantity_spice_3">Quantity spices</label>
+    <input type="number" name="quantity_spice_3" id="quantity_spice_3" placeholder="How many?" />
+    <input type="button" onclick="add_spices_4()" value="Add spice"/><br/>
+    </span>
+ </div>
+      <div>
+    <span id="spice4" style="display:none">
+    <label for="spice_4">Next spice</label>
+    <input type="text" name="spice_4" id="spice_4" placeholder="Enter the spice name" />
+    <label for="quantity_spice_4">Quantity spices</label>
+    <input type="number" name="quantity_spice_4" id="quantity_spice_4" placeholder="How many?" />
+    <input type="button" onclick="add_spices_5()" value="Add spice"/><br/>
+    </span>
+ </div>
+      <div>
+    <span id="spice5" style="display:none">
+    <label for="spice_5">Next spice</label>
+    <input type="text" name="spice_5" id="spice_5" placeholder="Enter the spice name" />
+    <label for="quantity_spice_5">Quantity spices</label>
+    <input type="number" name="quantity_spice_5" id="quantity_spice_5" placeholder="How many?" />
+    <input type="button" onclick="add_spices_6()" value="Add spice"/><br/>
+    </span>
+ </div>
+      <div>
+    <span id="spice6" style="display:none">
+    <label for="spice_6">Next spice</label>
+    <input type="text" name="spice_6" id="spice_6" placeholder="Enter the spice name" />
+    <label for="quantity_spice_6">Quantity spices</label>
+    <input type="number" name="quantity_spice_6" id="quantity_spice_6" placeholder="How many?" />
+    <input type="button" onclick="add_spices_7()" value="Add spice"/><br/>
+    </span>
+ </div>
+      <div>
+    <span id="spice7" style="display:none">
+    <label for="spice_7">Next spice</label>
+    <input type="text" name="spice_7" id="spice_7" placeholder="Enter the spice name" />
+    <label for="quantity_spice_7">Quantity spices</label>
+    <input type="number" name="quantity_spice_7" id="quantity_spice_7" placeholder="How many?" />
+    <input type="button" onclick="add_spices_8()" value="Add spice"/><br/>
+    </span>
+ </div>
+      <div>
+    <span id="spice8" style="display:none">
+    <label for="spice_8">Next spice</label>
+    <input type="text" name="spice_8" id="spice_8" placeholder="Enter the spice name" />
+    <label for="quantity_spice_8">Quantity spices</label>
+    <input type="number" name="quantity_spice_8" id="quantity_spice_8" placeholder="How many?" />
+    <input type="button" onclick="add_spices_9()" value="Add spice"/><br/>
+    </span>
+ </div>
+      <div>
+    <span id="spice9" style="display:none">
+    <label for="spice_9">Next spice</label>
+    <input type="text" name="spice_9" id="spice_9" placeholder="Enter the spice name" />
+    <label for="quantity_spice_9">Quantity spices</label>
+    <input type="number" name="quantity_spice_9" id="quantity_spice_9" placeholder="How many?" />
+    <input type="button" onclick="add_spices_10()" value="Add spice"/><br/>
+    </span>
+ </div>
+      <div>
+    <span id="spice10" style="display:none">
+    <label for="spice_10">Next spice</label>
+    <input type="text" name="spice_10" id="spice_1" placeholder="Enter the spice name" />
+    <label for="quantity_spice_10">Quantity spices</label>
+    <input type="number" name="quantity_spice_10" id="quantity_spice_10" placeholder="How many?" />
+    </span>
+ </div>
+    <div>
+    <label for="instruction_cooking">Process cooking</label>
+    <input type="text" name="instruction_cooking" id="instruction_cooking" placeholder="Write the cooking steps" />
+  </div>
+     <div>
+    <label for="cooking_time">Cooking time</label>
+    <input type="number" name="cooking_time" id="cooking_time" placeholder="Enter the time in minutes" />
+  </div>
+   <div>
+    <label for="country">What country the dish is from</label>
+    <select id="country" name="country">
+        {% for country in dish_country %}
+        <option value="{{ country }}">{{ country }}</option>
+        {% endfor %}
+    </select>
+   </div>
+ <div>
+    <label for="difficulty_cooking">Cooking complexity</label>
+    <select id="difficulty_cooking" name="difficulty_cooking">
+        {% for num in range_difficulty %}
+        <option value="{{ num }}">{{ num }}</option>
+        {% endfor %}
+    </select>
+   </div>
+     <button><h4>Add dish recipe</h4></button>
+  </form>
+  </body>
+</html>

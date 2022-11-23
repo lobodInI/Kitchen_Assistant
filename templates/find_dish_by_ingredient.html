@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FIND RECIPE</title>
+</head>
+<body>
+<form action="find_dish_by_ingredient" method="POST">
+    {% csrf_token %}
+  <div>
+      <label for="ingredient_1"><h3>First ingredient:</h3></label>
+    <input name="ingredient_1" id="ingredient_1" placeholder="Enter a dish ingredient" />
+  </div>
+    <div>
+    <label for="ingredient_2"><h3>Second ingredient:</h3></label>
+    <input name="ingredient_2" id="ingredient_2" placeholder="Enter a dish ingredient" />
+  </div>
+    <div>
+    <label for="ingredient_3"><h3>Third ingredient:</h3></label>
+    <input name="ingredient_3" id="ingredient_3" placeholder="Enter a dish ingredient" />
+  </div>
+    <button>Show results</button>
+</form>
+</body>
+</html>

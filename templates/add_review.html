@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ADD REVIEW DISH</title>
+</head>
+<body>
+ <form action="" method="POST">
+     {% csrf_token %}
+    <div>
+    <label for="user_review">Your review</label>
+    <input type="text" name="user_review" id="user_review" placeholder="Write here you impressions" />
+  </div>
+ <div>
+    <label for="user_rate">Your evaluation</label>
+    <select id="user_rate" name="user_rate">
+        {% for num in range_rate %}
+        <option value="{{ num }}">{{ num }}</option>
+        {% endfor %}
+    </select>
+   </div>
+  <button><h4>Add review</h4></button>
+ </form>
+</body>
+</html>

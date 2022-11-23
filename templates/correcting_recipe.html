@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EDIT RECIPE</title>
+</head>
+<body>
+<form action="" method="POST">
+    {% csrf_token %}
+    <div>
+    {% for k, v in recipe_data.items %}
+        <br><b><label for="{{ k }}">{{ k }}</label><b>
+        <input name="{{ k }}" id="{{ k }}" value="{{ v }}" size="50" >
+    {% endfor %}
+  </div>
+    <button><h4>Save changes</h4></button>
+</form>
+</body>
+</html>
