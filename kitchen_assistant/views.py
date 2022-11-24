@@ -10,6 +10,9 @@ from kitchen_assistant import models
 from django.db import connection
 
 
+def main_page(request):
+    return render(request, 'main_page.html')
+
 
 def dish_filter(request):
     if request.method == "GET":
